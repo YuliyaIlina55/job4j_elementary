@@ -23,4 +23,13 @@ public class MaxTest {
         int expected = 2;
         Assert.assertEquals(result, expected);
     }
+
+    @Test
+    public void whenMax4to2Then4() {
+        int left = 4;
+        int right = 2;
+        int result = Max.max(left, right);
+        int expected = 4;
+        Assert.assertEquals(result, expected);
+    }
 }
