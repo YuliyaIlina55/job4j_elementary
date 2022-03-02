@@ -9,10 +9,14 @@ public class Counter {
         return sum;
       }
 
-    public static void main(String[] args) {
-        System.out.println(Counter.sum(0, 10));
-        System.out.println(Counter.sum(3, 8));
-        System.out.println(Counter.sum(1, 1));
-        System.out.println(Counter.sum(1, 3));
-    }
+       public static int sumByEven(int start, int finish) {
+        int sum = 0;
+        for (start = start, finish = finish; start <= finish; start++) {
+            if (start % 2 == 0) {
+                sum = sum + start;
+            }
+        }
+        return sum;
+       }
+
 }
