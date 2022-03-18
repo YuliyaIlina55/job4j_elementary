@@ -1,4 +1,5 @@
 package ru.job4j.array;
+
 import java.util.Arrays;
 
 public class Machine {
@@ -7,10 +8,10 @@ public class Machine {
         int[] rsl = new int[100];
         int size = 0;
         int cheng = money - price;
-        for (int i = 0; i < coins.length; i++) {
-            while (cheng - coins[i] >= 0) {
-                cheng -= coins[i];
-                rsl[size] = coins[i];
+        for (int coin : coins) {
+            while (cheng - coin >= 0) {
+                cheng -= coin;
+                rsl[size] = coin;
                 size++;
             }
         }
